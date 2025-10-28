@@ -1,1 +1,1 @@
-Test
+![horizontal](/horizontal.png)
