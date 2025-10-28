@@ -1,1 +1,1 @@
-![horizontal](/horizontal.png)
+![horizontal](horizontal.png)
