@@ -1,4 +1,4 @@
-![video](video_schem_20251102.png)
+![video](video_schem_20251102.PNG)
 #
 Horizontal Section
 #
