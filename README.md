@@ -20,5 +20,9 @@ The video "cage" on the analog board, showing the original XC1186B removed and 2
 <br>
 The custom PCBA installed in the sockets.
 <br><br><br>
+![boot](boot1.PNG)
+<br>
+Running with the custom video processor, during boot.
+<br><br><br>
 #
 [Main Schematic and Sub-Circuits](sub_circuits.md)
