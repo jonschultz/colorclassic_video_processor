@@ -7,17 +7,18 @@ colorclassic_video_processor is an ongoing reverse‑engineering project to recr
 ![PCB1](pcb1.PNG)
 <br>
 CNC-prototyped, hand-assembled PCBA. Bodge wires and rework were required to bring design up to the latest rev described in this document. The outline of the PCB is quite unusual, in order maximize board area within the video "cage", while providing clearance to other nearby discrete components.
-<br><br>
+<br><br><br>
 ![PCB2](pcb2.PNG)
 <br>
 Bottom side of the PCBA, showing pins and additional circuitry.
-<br><br>
+<br><br><br>
 ![socket1](video_socket1.PNG)
 <br>
 The video "cage" on the analog board, showing the original XC1186B removed and 2x 21 pin sockets installed for quick installation and removal of the custom PCBA.
-<br><br>
+<br><br><br>
 ![socket1](pcb_installed1.PNG)
 <br>
 The custom PCBA installed in the sockets.
-<br><br>
+<br><br><br>
+#
 [Main Schematic and Sub-Circuits](sub_circuits.md)
