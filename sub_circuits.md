@@ -4,6 +4,7 @@
 <br>
 The high-level function of the horizontal section is to take the composite sync signal provided on the Color Classic analog board ("AB"), extract a horizontal sync signal, and then use that to generate the horizontal deflection pulse within the required range of duty cycle. The horizontal deflection pulse is used to ultimately pulse the horizontal output transistor on the AB.
 <br><br>
+
 ## Signal Chain:
 <br>
 * The LM1881 IC is used to provide a DC-coupled, approx 0-6V composite sync ("CSYNC") signal, using the AB's AC-coupled CSYNC singal as input. The LM1881 provides other functions that will be described in later sections. But here, the "copy" of the CSYNC signal is useful as a low-ouptut impedance input to the horizontal circuitry. The CSYNC falling edge represents the start of a scanline.<br>
