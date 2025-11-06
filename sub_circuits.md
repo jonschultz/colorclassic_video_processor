@@ -1,11 +1,11 @@
 ![video](video_schem_20251102A.png)
 #
 # Horizontal Section
-<br><br>
+<br>
 The high-level function of the horizontal section is to take the composite sync signal provided on the Color Classic analog board ("AB"), extract a horizontal sync signal, and then use that to generate the horizontal deflection pulse within the required range of duty cycle. The horizontal deflection pulse is used to ultimately pulse the horizontal output transistor on the AB.
 <br><br>
 ## Signal Chain:
-<br><br>
+<br>
 * The LM1881 IC is used to provide a DC-coupled, approx 0-6V composite sync ("CSYNC") signal, using the AB's AC-coupled CSYNC singal as input. The LM1881 provides other functions that will be described in later sections. But here, the "copy" of the CSYNC signal is useful as a low-ouptut impedance input to the horizontal circuitry. The CSYNC falling edge represents the start of a scanline.<br>
 * CSYNC pulls a simple voltage regulator of two 3.3V Zener diodes to ground when high with a BJT inverter, conversely producing 6.6V at the falling edge.<br>
 * The 6.6V pulse is buffered and drives a simple edge detector comprised of an RC network. An quickly decaying exponential pulse results (about 1μs in duration), independent of the duty cycle of the CSYNC input. This allows the circuity to generate all pulses nearly equally in amplitude and duration, whether the input pulse is at the start of the scanline or during the vertical sync period when the duty cycle is larger.<br>
@@ -19,7 +19,7 @@ The high-level function of the horizontal section is to take the composite sync 
 <br><br><br>
 
 ## Considerations:
-<br><br>
+<br>
 * It may be clear from the description of the signal path above that much of the horizontal circuity is a kind of "one-shot" timer that converts an HSYNC pulse train into another "digital" pulse with a particular delay and duty cycle. As such, there are many ways of implementing this functionality. I've chosen to use mostly discrete components and build from low-level functionality. This has given me a lot of control over the behavior of the circuitry. But timing of the final horizontal drive pulse, as well as the voltage level and output impedance are important.
 * Like the other sub-circuits, the supply voltage is 8V from the Pin 22 position. This appears to be the main rail for powering the XCll86B, though there appear to be other supply voltages (more on that later). The grounding approach for all the sub-circuits is especially important for avoiding video artifacts. Through experimentation, I've found that associating all the horizontal circuitry with Pin 31 ground (#3 in my schematic) is best, which is physically closest to the pins associated with the horizontal section.
 * A lot of trial and error was employeed to make the timing stable, especially with respect to temperature. Use of accumulator capacitors with low temperature sensitivity is particularly important, as well as using a small voltage rise. The high linearity and lower temperature sensitivity outweigh and SNR benefit in this regime. Having a very stable "V2" is also critical, and I found that the dual-stage regulator/buffer was necessary to achieve this. Small changes in the Vbe of each BJT can contribute to temperature-sensitive drift in all of the circuitry, so paired NPN/PNP stages help to null out this effect, as well as to reduce base current in general, leading to more stable Vbe.
