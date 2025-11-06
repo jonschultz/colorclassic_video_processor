@@ -1,10 +1,10 @@
 ![video](video_schem_20251102A.png)
 #
-Horizontal Section
-<br>
+# Horizontal Section
+<br><br>
 The high-level function of the horizontal section is to take the composite sync signal provided on the Color Classic analog board ("AB"), extract a horizontal sync signal, and then use that to generate the horizontal deflection pulse within the required range of duty cycle. The horizontal deflection pulse is used to ultimately pulse the horizontal output transistor on the AB.
 <br><br>
-Signal Chain:
+## Signal Chain:
 <br><br>
 * The LM1881 IC is used to provide a DC-coupled, approx 0-6V composite sync ("CSYNC") signal, using the AB's AC-coupled CSYNC singal as input. The LM1881 provides other functions that will be described in later sections. But here, the "copy" of the CSYNC signal is useful as a low-ouptut impedance input to the horizontal circuitry. The CSYNC falling edge represents the start of a scanline.<br>
 * CSYNC pulls a simple voltage regulator of two 3.3V Zener diodes to ground when high with a BJT inverter, conversely producing 6.6V at the falling edge.<br>
@@ -18,7 +18,7 @@ Signal Chain:
 * The switching of the threshold logic BJT is inverted and buffered by another switching BJT. This signal is applied to Pin 32, which drives a MOSFET on the ABS and ultimately drives the rest of the horizontal section. The timing of the rising edge of this final output pulse controls the phase of the horizontal scan in relation to all other signals (especially the video signals). This edge should occur about 28μs after the falling edge of CSYNC in order to have a well-centered image (at 31.5kHz horizontal scan frequency).
 <br><br><br>
 
-Considerations:
+## Considerations:
 <br><br>
 * It may be clear from the description of the signal path above that much of the horizontal circuity is a kind of "one-shot" timer that converts an HSYNC pulse train into another "digital" pulse with a particular delay and duty cycle. As such, there are many ways of implementing this functionality. I've chosen to use mostly discrete components and build from low-level functionality. This has given me a lot of control over the behavior of the circuitry. But timing of the final horizontal drive pulse, as well as the voltage level and output impedance are important.
 * Like the other sub-circuits, the supply voltage is 8V from the Pin 22 position. This appears to be the main rail for powering the XCll86B, though there appear to be other supply voltages (more on that later). The grounding approach for all the sub-circuits is especially important for avoiding video artifacts. Through experimentation, I've found that associating all the horizontal circuitry with Pin 31 ground (#3 in my schematic) is best, which is physically closest to the pins associated with the horizontal section.
