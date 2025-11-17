@@ -28,4 +28,20 @@ The high-level function of the horizontal section is to take the composite sync 
 * All BJTs used are S8050s (NPN) or S8550s (PNP), unless otherwise noted. These are well matched BJTs that are reasonably fast for this application and have good gain. The final output transistor at Q22 requires a little more collector current handling, and I've opted for FMMT449. A more complete recommended parts list will be provided in another section.
 <br><br>
 #
+
+# Vertical Section
+<br>
+The vertical section's main function is to generate a sawtooth waveform that represents the beam displacement from the top of the display to the bottom, with the lowest voltage value at representing the start of the scan at the top. This waveform drives the TDA8172, which is sort of high-power opamp that directly drives the vertical deflection coil. Other sections of the AB also make use of the vertical deflection waveform, as discussed below. From probing the output of the original XC1186B, it was found that the vertical deflection sawtooth ranges from about 1.5V to 5.4V, with a high degree of linearity.
+<br><br>
+
+## Signal Chain:
+<br>
+* The LM1881 IC is used to generate a VSYNC signal, extract from the AC-coupled CSYNC provided by the AB on the Pin 6 position.<br>
+* Independently, a simple current source and a 10 microfarad accumulator capacitor generate a linear voltage rise at around 33 V/s, or about 0.5V over the period of a single 60 Hz refresh. The exact current is adjustable by way of the AB's "VH" potentiometer, which is input on the Pin 39 position. VH forms a voltage divider with a 5V supply (described below), the output of which modulates a level shifter that drives the BJT current source.<br>
+* The voltage on the accumulator capacitor is reset to around 0.9V, provided by a simple voltage regulator and 100 microfarad decoupling capacitor, with a BJT that's driven by the VSYNC signal as a triggering pulse. The video processor's 5V supply piggybacks off this regulator's Zener reference, and provides 5V output on the Pin 7 position.<br>
+* The amplitude of the accumulator capacitor is intentionally kept low (0.5V as described above) in order to maintain high linearity of voltage with respect to time.<br>
+* The accumulator's signal is then amplified by a dual-BJT feedback amplifier with adjustable gain via a 2k potentiometer. The output of this stage produces the 1.5V to 5.4V sawtooth waveform required as input to the downstream circuitry of the AB, including the TDA8172. Due to part tolerances, user adjustment of the gain potentiometer is necessary to grossly bring the vertical sawtooth amplitude into the correct range, which has a direct impact on the height of image. The "VH" potentiometer on the rear of the AB allows for fine-tuning of the image height, just as would be the case with the XC1186B.<br>
+<br><br><br>
+
+## Considerations:
 More to come!
