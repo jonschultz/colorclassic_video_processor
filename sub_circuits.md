@@ -27,8 +27,8 @@ The high-level function of the horizontal section is to take the composite sync 
 * The C10 capacitor was originally connected in parallel with R45, in order to slow the discharge of the base voltage on Q21. The purpose of this was to avoid a short secondary pulse at the output when the sawtooth waveform falls sharply on the negative edge, switching the threshold circuitry in reverse order. These events happen on the time scale of a few microseconds, and as such, Q21 is discharges its base slowly enough without C10. The use of a relatively large resistance on R45 provides some discharge function (necessary to "reset" the circuitry quickly engough for the next cycle), but is slow enough to avoid generating the secondary pulse.<br>
 * All BJTs used are S8050s (NPN) or S8550s (PNP), unless otherwise noted. These are well matched BJTs that are reasonably fast for this application and have good gain. The final output transistor at Q22 requires a little more collector current handling, and I've opted for FMMT449. A more complete recommended parts list will be provided in another section.
 <br><br>
-#
 
+#
 # Vertical Section
 <br>
 The vertical section's main function is to generate a sawtooth waveform that represents the beam displacement from the top of the display to the bottom, with the lowest voltage value at representing the start of the scan at the top. This waveform drives the TDA8172, which is sort of high-power opamp that directly drives the vertical deflection coil. Other sections of the AB also make use of the vertical deflection waveform, as discussed below. From probing the output of the original XC1186B, it was found that the vertical deflection sawtooth ranges from about 1.5V to 5.4V, with a high degree of linearity.
