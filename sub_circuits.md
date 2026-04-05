@@ -1,5 +1,8 @@
 ![video](video_schem_20260405A.png)
 #
+Change Log:
+* 4/5/2026 - Update to schematic 20260405A. Incorporates capacitive coupling between vertical deflection accumulator and amplifier and associated output-referenced clamp. V1 of horizontal section changed to fixed voltage with Schottky diode. Ramp buffer converted to NPN follower for improved thermal stability (always far from saturation region). In RGB section, introduced output-referenced active clamp with simplified brightness supply. VHF/UHF BJTs incorporated into amps. Created unity-gain buffer section with pulldown for sync-tip insertion. Minor value tuning to accomodate reversion to original CC flyback (157-0146) and associated change of B+ from 86V to 68V.<br><br><br>
+
 # Horizontal Section
 <br>
 The high-level function of the horizontal section is to take the composite sync signal provided on the Color Classic analog board ("AB"), extract a horizontal sync signal, and then use that to generate the horizontal deflection pulse within the required range of duty cycle. The horizontal deflection pulse is used to ultimately pulse the horizontal output transistor on the AB.
