@@ -1,7 +1,7 @@
 ![video](video_schem_20260405A.png)
 #
 Change Log:
-* 4/5/2026 - Update to schematic 20260405A. Incorporates capacitive coupling between vertical deflection accumulator and amplifier and associated output-referenced clamp. V1 of horizontal section changed to fixed voltage with Schottky diode. Ramp buffer converted to NPN follower for improved thermal stability (always far from saturation region). In RGB section, introduced output-referenced active clamp with simplified brightness supply. VHF/UHF BJTs incorporated into amps. Created unity-gain buffer section with pulldown for sync-tip insertion. Minor value tuning to accomodate reversion to original CC flyback (157-0146) and associated change of B+ from 86V to 68V.<br><br><br>
+* 4/5/2026 - Update to schematic 20260405A. Incorporates capacitive coupling between vertical deflection accumulator and amplifier and associated output-referenced clamp. Coarse adjustment pot for vertical size removed and replaced with fixed resistors. V1 of horizontal section changed to fixed voltage with Schottky diode. Ramp buffer converted to NPN follower for improved thermal stability (always far from saturation region). In RGB section, introduced output-referenced active clamp with simplified brightness supply. VHF/UHF BJTs incorporated into amps. Created unity-gain buffer section with pulldown for sync-tip insertion. Minor value tuning to accomodate reversion to original CC flyback (157-0146) and associated change of B+ from 86V to 68V.<br><br><br>
 
 # Horizontal Section
 <br>
