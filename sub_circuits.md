@@ -71,7 +71,7 @@ Another major function of the XC1186B is to take the low-amplitude, capacitively
 
 ![bars](grey_bars_green1.PNG)
 <br>
-Scope shot showing green channel input (Channel 1) at Pin 16 and green channel output (Channel 2) at Pin 26, while displaying a grey bar pattern and with brightness and gain (contrast) optimized for picture quality. The signal input has a range from about 1.3V to 2.0V, and the output is from about 1.1 (black level) to 2.9V, representing a gain of about 2.6x. Note the sync tips in the output signal that fall to 0V.
+Scope shot showing green channel input (Channel 1) at Pin 16 and green channel output (Channel 2) at Pin 26, while displaying a grey bar pattern and with brightness and gain (contrast) optimized for picture quality. The signal input has a range from about 1.3V to 2.0V, and the output is from about 1.0 (black level) to 2.9V, representing a gain of about 2.7x. Note the sync tips in the output signal that fall to 0V.
 <br><br><br>
 ## Considerations:
 <br>
