@@ -10,6 +10,7 @@ Change Log:
 * I've taken some effort to label components uniquely and clearly, but there's always the possibility for mistakes. The numbering is somewhat random, as automatic labeling was at play while the design evolved over time. Many components were deleted and new ones emerged, with numbers being recycled in a somewhat disorganized way.<br><br>
 * A parts list will be provided in a later section. Some specific part numbers are provided in the schematic above, but many aren't. Some common parts, like resistors, will only be given rough specs and package type rather than a specific manufacturer's part number.<br><br>
 * I've added a "Condsiderations" section for each circuit category below, mainly to help those interested in building on this design or making changes. These sections are intended to explain some of my design intent and some possibly important things about the CC's electronics in general. My understanding is certainly not 100% comprehensive, but I hope others find this information useful.<br><br>
+<br><br>
 
 # Horizontal Section
 <br>
