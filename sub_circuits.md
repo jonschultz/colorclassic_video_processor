@@ -118,10 +118,4 @@ As alluded to earlier, warp compensation works in conjunction with the horizonta
 * As mentioned earlier, the XC1186B does not take the TDA8145's pin 5 as input. As such, a bodge wire is required to bring it to an unused pin so that the colorclassic_video_processor can use it. Pin 5 (coincidentally) was a great candidate because it otherwise doesn't serve any purpose and has high input impedence from the other connected discrete components. The modification is simple and safe enough for anyone attempting to replace the XC1186B anyway. More details about this will be covered in a later section on general assembly and operation considerations.<br><br>
 <br><br><br>
 
-# Layout and Fabrication
-<br>
 
-![top](video_integrated_PCBA3_top.PNG)
-<br>
-![bottom](video_integrated_PCBA3_bottom.PNG)
-<br>
