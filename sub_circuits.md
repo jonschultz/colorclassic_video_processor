@@ -60,6 +60,11 @@ The vertical section's main function is to generate a sawtooth waveform that rep
 * The accumulator's signal is then amplified by a dual-BJT feedback amplifier with a gain of 4x. On the schematic I have indicated the use of a pot for coarse adjustment of the amplifier gain, but I've found fixed 1k and 3k resistors to be more stable. Coarse adjustment is really unnecessary, anyway. The output of this stage produces the 1.3V to 5.4V sawtooth waveform required as input to the downstream circuitry of the AB, including the TDA8172. The "VH" potentiometer on the rear of the AB allows for fine-tuning of the image height, just as would be the case with the XC1186B.<br>
 <br><br><br>
 
+![vert](vert_ramp_scope1.png)
+<br>
+Scope shot showing the vertical ramp signal generated on Pin 37.
+<br><br><br>
+
 ## Considerations:
 <br>
 * As mentioned, keeping the accumulator amplitude low was important to maintain good linearity and temperature stability. D3 in the level shifter also helps in this regard by matching and nulling out much of the thermal drift in Vbe on Q3. Having a reliable and stable current source is important for this implementation.<br><br>
