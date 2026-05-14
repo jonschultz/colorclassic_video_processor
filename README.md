@@ -6,7 +6,7 @@ colorclassic_video_processor is an ongoing reverse‑engineering project to recr
 #
 ![PCB1](PCB_sideA.PNG)
 <br>
-CNC-prototyped, hand-assembled PCBA. Bodge wires and rework were required to bring design up to the latest rev described in this document. The outline of the PCB is quite unusual, in order maximize board area within the video "cage", while providing clearance to other nearby discrete components.
+CNC-prototyped, hand-assembled PCBA. The outline of the PCB is quite unusual, in order maximize board area within the video "cage", while providing clearance to other nearby discrete components.
 <br><br><br>
 ![PCB2](PCB_sideB.PNG)
 <br>
