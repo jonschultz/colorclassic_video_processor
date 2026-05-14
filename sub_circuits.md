@@ -4,6 +4,12 @@ Change Log:
 * 4/5/2026 - Update to schematic 20260405A. Incorporates capacitive coupling between vertical deflection accumulator and amplifier and associated output-referenced clamp. Coarse adjustment pot for vertical size removed and replaced with fixed resistors. V1 of horizontal section changed to fixed voltage with Schottky diode. Ramp buffer converted to NPN follower for improved thermal stability (always far from saturation region). In RGB section, introduced output-referenced active clamp with simplified brightness supply. VHF/UHF BJTs incorporated into amps. Created unity-gain buffer section with pulldown for sync-tip insertion. Minor value tuning to accomodate reversion to original CC flyback (157-0146) and associated change of B+ from 86V to 68V.<br><br>
 * 5/13/2026 - Update to schematic 20260513A. Change name of "Skew Compensation" to "Warp Compensation" and make it a standard section of the circuitry, now that it has been implemented in the latest revision. Incorporate SMMBFJ177LT1G JFETs into RGB preamps as part of dynamic gain for contrast adjustment. Add level shift circuit section for using the contrast adjustment voltage at Pin 19 to drive JFETs.<br><br>
 <br><br>
+# General Notes
+<br>
+* Unless specificed for another particular component, any reference to a "Pin" position is with respect to the XC1186B's original pinout, and as such, the pinout of colorclassic_video_processor.<br><br>
+* I've taken some effort to label components uniquely and clearly, but there's always the possibility for mistakes. The numbering is somewhat random, as automatic labeling was at play while the design evolved over time. Many components were deleted and new ones emerged, with numbers being recycled in a somewhat disorganized way.<br><br>
+* A parts list will be provided in a later section. Some specific part numbers are provided in the schematic above, but many aren't. Some common parts, like resistors, will only be given rough specs and package type rather than a specific manufacturer's part number.<br><br>
+* I've added a "Condsiderations" section for each circuit category below, mainly to help those interested in building on this design or making changes. These sections are intended to explain some of my design intent and some possibly important things about the CC's electronics in general. My understanding is certainly not 100% comprehensive, but I hope others find this information useful.<br><br>
 
 # Horizontal Section
 <br>
