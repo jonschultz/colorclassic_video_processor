@@ -26,3 +26,5 @@ Running with the custom video processor, during boot.
 <br><br><br>
 #
 [Main Schematic and Sub-Circuits](sub_circuits.md)
+<br>
+[Fabrication Files and Notes](fabrication.md)
