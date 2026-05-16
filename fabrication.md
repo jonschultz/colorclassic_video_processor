@@ -9,6 +9,10 @@
 <br>
 ![vias](video_integrated_PCBA3_vias.PNG)
 <br>
+![top_ortho](video_integrated_PCBA3_top_ortho.PNG)
+<br>
+![bottom_ortho](video_integrated_PCBA3_bottom_ortho.PNG)
+<br>
 
 ## Parts List
 <br>
