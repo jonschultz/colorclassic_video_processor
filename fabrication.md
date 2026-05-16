@@ -5,6 +5,8 @@
 <br>
 ![bottom](video_integrated_PCBA3_bottom.PNG)
 <br>
+![pins](video_integrated_PCBA3_pins.PNG)
+<br>
 <br>
 
 ## Parts List
