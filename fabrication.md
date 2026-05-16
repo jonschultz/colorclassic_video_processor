@@ -52,8 +52,8 @@
 | R49      |                         | 1k           | 1206                 |  +/- 1%   | Thick film, 1/4W              |
 | Q12      | S8050                   | NPN          | SOT-23               |           |                               |
 | R25      |                         | 2k           | 1206                 |  +/- 1%   | Thick film, 1/4W              |
-| D7       | BZX384C3V3-E3-18        | 3.3V         | SOD-323              |  +/- 5%   | Zener                         |
-| D10      | BZX384C3V3-E3-18        | 3.3V         | SOD-323              |  +/- 5%   | Zener                         |
+| D7       | BZX4C3V3-E3-18        | 3.3V         | SOD-323              |  +/- 5%   | Zener                         |
+| D10      | BZX4C3V3-E3-18        | 3.3V         | SOD-323              |  +/- 5%   | Zener                         |
 | R53      |                         | 10k          | 1206                 |  +/- 1%   | Thick film, 1/4W              |
 | Q24      | S8050                   | NPN          | SOT-23               |           |                               |
 | R54      |                         | 4.7k         | 1206                 |  +/- 1%   | Thick film, 1/4W              |
@@ -69,7 +69,7 @@
 | Q26      | S8550                   | PNP          | SOT-23               |           |                               |
 | R58      |                         | 2k           | 1206                 |  +/- 1%   | Thick film, 1/4W              |
 | C1       | ES5107M016AE1EA         | 100uF, 16V   |                      |  +/- 20%  | Electrolytic                  |
-| D5       | BZX384C3V3-E3-18        | 3.3V         | SOD-323              |  +/- 5%   | Zener                         |
+| D5       | BZX4C3V3-E3-18        | 3.3V         | SOD-323              |  +/- 5%   | Zener                         |
 | R28      |                         | 2k           | 1206                 |  +/- 1%   | Thick film, 1/4W              |
 | R29      |                         | 320          | 1206                 |  +/- 1%   | Thick film, 1/4W              |
 | Q13      | S8550                   | PNP          | SOT-23               |           |                               |
@@ -77,7 +77,7 @@
 | R30      |                         | 2k           | 1206                 |  +/- 1%   | Thick film, 1/4W              |
 | R50      |                         | 2k           | 1206                 |  +/- 1%   | Thick film, 1/4W              |
 | Q14      | FMMT449                 | NPN          | SOT-23               |           |                               |
-| R38      |                         | 470          | 1206                 |  +/- 1%   | Thick film, 1/4W              |
+| R38      |                         | 470 + 0      | 1206                 |  +/- 1%   | Thick film, 1/4W, 2 in series |
 | Q2       | S8050                   | NPN          | SOT-23               |           |                               |
 | R31      |                         | 470          | 1206                 |  +/- 1%   | Thick film, 1/4W              |
 | R27      |                         | 2k           | 1206                 |  +/- 1%   | Thick film, 1/4W              |
