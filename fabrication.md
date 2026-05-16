@@ -9,6 +9,11 @@
 
 ## Parts List
 <br>
+As mentioned in another section, the part identifiers have evolved organically along with the circuit design. The ordering doesn't have much relationship to the circuit layout at this point.<br><br>
+Many of the components, such as resistors are commoditity SMD parts, so no part number is given, just specs. The tolerances cover a range, because in many cases I used what I had on hand. The tolerance values given below will certainly work, but I would recommend using 1% fixed resistors whenever possible, as the cost is really quite negligible.<br><br>
+There are some cases of 2 resistors in series being identified as 1 part. This is because they are needed for only one particular value, but are physically needed to jumper over multiple traces. This is just a consequence of my layout and fabrication limitations, and could be redesigned in a cleaner way. More about this will be discussed in later section.<br><br>
+Some of the capacitors absolutely require C0G dielectric for temperature stability and voltage insensitivity, and this is noted in the "Notes" column where applicable.<br><br>
+In some cases, multiple package sizes could fit, so I've noted that in the "Package Outline" column. In general, the pad layout is not optimal, agian, because of my fabrication limitations with a milled PCB. Some have more or less component lead overlap.<br><br>
 
 | Part ID  | Part Number             | Value        | Package Outline      | Tolerance | Notes                         |
 | -------- | ----------------------- | ------------ | -------------------- | --------- | ----------------------------- |
