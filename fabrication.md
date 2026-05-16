@@ -9,6 +9,7 @@
 
 ## Parts List
 <br>
+
 | Part ID | Part Number | Value | Package Outline | Tolerance | Notes |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | C17 | | 10uF, 16V | 1206 | +/- 10% | X5R Dielectric |
@@ -150,6 +151,7 @@
 | C11 | | 1uF, 25V | 0603 | | X5R Dielectric |
 | R77 | | 4.7k | 1206 | +/- 1% | Thick film, 1/4W |
 | R78 | | 2k | 1206 | +/- 1% | Thick film, 1/4W |
+
 <br><br>
 [Top PCB Outline and Trace DXF](https://github.com/jonschultz/colorclassic_video_processor/blob/main/video_integrated_PCB3_top_simplified.dxf)
 <br>
