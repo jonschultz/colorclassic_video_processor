@@ -22,7 +22,7 @@ The custom PCBA installed in the sockets.
 <br><br><br>
 ![boot](boot1.PNG)
 <br>
-Running with the custom video processor, during boot.
+Running with the colorclassic_video_processor, during boot.
 <br><br><br>
 #
 [Main Schematic and Sub-Circuits](sub_circuits.md)
