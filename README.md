@@ -16,7 +16,7 @@ Bottom side of the PCBA, showing pins and additional circuitry.
 <br>
 The video "cage" on the analog board, showing the original XC1186B removed and 2x 21 pin sockets installed for quick installation and removal of the custom PCBA.
 <br><br><br>
-![socket1](PCB_installed.PNG)
+![socket1](PCB_installed2.PNG)
 <br>
 The custom PCBA installed in the sockets.
 <br><br><br>
