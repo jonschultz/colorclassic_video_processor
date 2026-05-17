@@ -6,7 +6,6 @@ Change Log:
 * 5/17/2026 - Updated some references to component values below. Clarified description of capabilities for RGB gain control.<br><br>
 <br><br>
 # General Notes
-<br>
 * Unless specificed for another particular component, any reference to a "Pin" position is with respect to the XC1186B's original pinout, and as such, the pinout of colorclassic_video_processor.<br><br>
 * I've taken some effort to label components uniquely and clearly, but there's always the possibility for mistakes. The numbering is somewhat random, as automatic labeling was at play while the design evolved over time. Many components were deleted and new ones emerged, with numbers being recycled in a somewhat disorganized way.<br><br>
 * A parts list will be provided in a later section. Some specific part numbers are provided in the schematic above, but many aren't. Some common parts, like resistors, will only be given rough specs and package type rather than a specific manufacturer's part number.<br><br>
@@ -19,7 +18,6 @@ The high-level function of the horizontal section is to take the composite sync 
 <br><br>
 
 ## Signal Chain:
-<br>
 * The LM1881 IC is used to provide a DC-coupled, approx 0-6V composite sync ("CSYNC") signal, using the AB's AC-coupled CSYNC singal as input. The LM1881 provides other functions that will be described in later sections. But here, the "copy" of the CSYNC signal is useful as a low-ouptut impedance input to the horizontal circuitry. The CSYNC falling edge represents the start of a scanline.<br><br>
 * CSYNC pulls a simple voltage regulator of two 3.3V Zener diodes to ground when high with a BJT inverter, conversely producing 6.6V at the falling edge.<br><br>
 * The 6.6V pulse is buffered and drives a simple edge detector comprised of an RC network. A quickly decaying exponential pulse results (about 1μs in duration), independent of the duty cycle of the CSYNC input. This allows the circuity to generate all pulses nearly equally in amplitude and duration, whether the input pulse is at the start of the scanline or during the vertical sync period when the duty cycle is larger.<br><br>
@@ -36,8 +34,8 @@ The high-level function of the horizontal section is to take the composite sync 
 <br>
 Scope shot showing the composite sync signal from pin 1 of the LM1881 (Channel 1) and the horizontal drive output signal (Channel 2) at Pin 32. The positive edge of the drive signal starts the cycle of tracing the next horizontal line as it drives the downstream circuitry on the AB. For a well centered image, this edge is roughly 28 microseconds after the negative edge of the previous composite sync pulse. The negative edge of the horizontal drive signal is less critical to the general timing, but is typically about 11-12 microseconds (as shown by the vertical cursors).
 <br><br><br>
+
 ## Considerations:
-<br>
 * It may be clear from the description of the signal path above that much of the horizontal circuity is a kind of "one-shot" timer that converts an HSYNC pulse train into another "digital" pulse with a particular delay and duty cycle. As such, there are many ways of implementing this functionality. I've chosen to use mostly discrete components and build from low-level functionality. This has given me a lot of control over the behavior of the circuitry. But timing of the final horizontal drive pulse, as well as the voltage level and output impedance are important.<br><br>
 * Like the other sub-circuits, the supply voltage is 8V from the Pin 22 position. This appears to be the main rail for powering the XCll86B, though there appear to be other supply voltages (more on that later). The grounding approach for all the sub-circuits is especially important for avoiding video artifacts. Through experimentation, I've found that associating all the horizontal circuitry with Pin 31 ground (#3 in my schematic) is best, which is physically closest to the pins associated with the horizontal section.<br><br>
 * A lot of trial and error was employeed to make the timing stable, especially with respect to temperature. Use of accumulator capacitors with low temperature sensitivity is particularly important, as well as using a small voltage rise. The high linearity and lower temperature sensitivity outweigh any SNR benefit in this regime. Having a very stable "V2" is also critical, and I found that the dual-stage regulator/buffer was necessary to achieve this. Small changes in the Vbe of each BJT can contribute to temperature-sensitive drift in all of the circuitry, so paired NPN/PNP stages help to null out this effect, as well as to reduce base current in general, leading to more stable Vbe.<br><br>
@@ -52,7 +50,6 @@ The vertical section's main function is to generate a sawtooth waveform that rep
 <br><br>
 
 ## Signal Chain:
-<br>
 * The LM1881 IC is used to generate a VSYNC signal, extracted from the AC-coupled CSYNC provided by the AB on the Pin 6 position.<br><br>
 * Independently, a simple current source and a 0.47 microfarad accumulator capacitor generate a linear voltage rise of about 1V over a single 60 Hz refresh period. The exact current is adjustable by way of the AB's "VH" potentiometer, which is input on the Pin 39 position. VH forms a voltage divider with a 3.3V Zener-regulated supply, the output of which modulates a level shifter that drives the BJT current source.<br><br>
 * The voltage on the accumulator capacitor is reset to ground with a BJT that's driven by the VSYNC signal as a triggering pulse. The video processor's 5V supply piggybacks off this regulator's Zener reference, and provides 5V output on the Pin 7 position.<br><br>
@@ -67,7 +64,6 @@ Scope shot showing the vertical ramp signal generated on Pin 37.
 <br><br><br>
 
 ## Considerations:
-<br>
 * As mentioned, keeping the accumulator amplitude low was important to maintain good linearity and temperature stability. D3 in the level shifter also helps in this regard by matching and nulling out much of the thermal drift in Vbe on Q3. Having a reliable and stable current source is important for this implementation.<br><br>
 * The exact value of the trough of the vertical sawtooth waveform is not especially critical, as the output of TDA8172 is capacitively coupled to the vertical deflection coil, though it's important to not saturate the voltage on peak of the waveform. DC is restored separately at the TDA8172, and the vertical shift, "VS", potentiometer and associated circuitry on the AB contribute to this function. As such, VS still works as it normally would. As mentioned, other parts of the AB use the vertical sawtooth as a signal representing the vertical beam position, notably the TDA8145, which accepts it as input for pincushion correction (horizontal scaling as function of vertical position). Changes in the DC level ultimately result in modulation of the keystone geometry. The TDA8145 can account for this and add its own DC reference by way of the keystone correction potentiometer on the rear of the AB. A trough voltage of around 1.3V was empirically found to be suitable for all functions.<br><br>
 * Like in the horizontal section, using the appropriate ground connections is important. I'm using a mix of Pin 31 and Pin 12 ground connections on the prototype PCB. It turned out to be a fortunate choice, as these two are nearly equivalent, being in very close connection on the AB and seemingly associated with the original XC1186B's vertical functions. There were some initial uses of the Pin 21 ground, though this was fortunately easy to fix with bodges, resolving some initial video artifact problems.<br><br>
@@ -92,8 +88,8 @@ Another major function of the XC1186B is to take the low-amplitude, capacitively
 <br>
 Scope shot showing green channel input (Channel 1) at Pin 16 and green channel output (Channel 2) at Pin 26, while displaying a grey bar pattern and with brightness and gain (contrast) optimized for picture quality. The signal input has a range from about 1.3V to 2.0V, and the output is from about 1.0 (black level) to 2.9V, representing a gain of about 2.7x. Note the sync tips in the output signal that fall to 0V.
 <br><br><br>
+
 ## Considerations:
-<br>
 * The 2k pots on the PCB offer direct control of the image contrast for each channel, but are not ideal solutions for a few reason. One is that they are not readily accessible with the RF cage in place, making casual fine adjustment impractical. Another problem is that the gain range is quite large, and it might be initially difficult to find the ideal contrast (in conjunction with optimal brightness, G2 setting, background, etc). In practice, using 2.8x as a starting gain value seems about optimal (with ".._POT_LO" equal to about 450 to 600 Ohms). See the "Installation and Setup" section for more details. While there is an overall gain control that is adjustable thorugh the Sub Contrast pot on the rear of the AB and through the Screen control panel, the Green Gain and Blue Gain controls on the rear of the AB are not yet functional. These are currently (with the Version 3 design) the only two rear controls that are non-functional.<br><br>
 * The value of the coupling resistor R23, between the amplifier stage and the buffer stage, was chosen as a sort of compromise. Larger values allow the sync-tip insertion circuity to more easily pull down the signal without loading the amplifier's output, but it would create a significant voltage drop between the two stages. The output of the entire RGB section drives 330 Ohm termination resistors (RV7, RV8, and RV9 on the AB), requiring up to about 13mA of current for bright parts of the image. Assuming the current into the buffer stage is about 1% of that, the 470 Ohm coupling resistor has about 63mV of voltage drop. This is not an insignficant drop as it is, and increasing the resistor's value would only add further signal attentuation. However, smaller values would present more of a current load during sync-tip insertion, loading the amplifier while possibly affecting the clamping circuitry.<br><br>
 * Schottky diodes were chosen for the isolation of the sync-tip pulldown due to their low forward voltage-drop. This brings the sync-tip level very close to zero, but not quite. Other implementations could provide an improvement, but with higher part count or complexity, such as by utilizing individual pulldown BJTs (Q32) for each channel. Another consideration for the use of Schottkys is that, while they are quite fast, they do have a small capacitance that requires discharge to fully turn them off. The 22k resistor at R74 was found to be optimal to bring the Schottkys' cathodes high after each sync-tip without excessively loading Q32.<br><br>
@@ -106,7 +102,6 @@ As alluded to earlier, warp compensation works in conjunction with the horizonta
 <br><br>
 
 ## Signal Chain:
-<br>
 * The vertical deflection-modulated pincushion correction signal is brought in from the TDA8145, and the gain is effectively reduced with a simple resistive divider.<br><br>
 * A BJT inverter/level shifter generates an inverted version of the original gain-reduced signal.<br><br>
 * The gain-reduced signal and inverted signal are effectively mixed passively with the "SKEW POT" and the wiper provides output. Depending on the position of the wiper, positive or negative warp/de-warp can be produced (the use-case for positive warp is possibly non-existent unless other geometry artifacts are at play, but I figured it was easy enough to implement).<br><br>
@@ -115,7 +110,6 @@ As alluded to earlier, warp compensation works in conjunction with the horizonta
 <br><br><br>
 
 ## Considerations:
-<br>
 * As mentioned earlier, the XC1186B does not take the TDA8145's pin 5 as input. As such, a bodge wire is required to bring it to an unused pin so that the colorclassic_video_processor can use it. Pin 5 (coincidentally) was a great candidate because it otherwise doesn't serve any purpose and has high input impedence from the other connected discrete components. The modification is simple and safe enough for anyone attempting to replace the XC1186B anyway. More details about this will be covered in a later section on general assembly and operation considerations.<br><br>
 <br><br><br>
 
