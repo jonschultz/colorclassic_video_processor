@@ -23,11 +23,11 @@
 ![warp](warp1.PNG)
 <br><br>
 Non-corrected image. Notice the concave warp on the left side of the image.<br><br>
-<br>
+<br><br>
 ![dewarp](dewarp1.PNG)
 <br><br>
 With optimal adjustment of the SKEW_POT.<br><br>
-<br>
+<br><br>
 ![warp_adjust](warp_adjust2.PNG)
 <br><br>
 A good rough position to start with on the SKEW_POT.<br><br>
