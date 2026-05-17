@@ -15,6 +15,9 @@
 <br>
 ![bare_board](bare_board2.PNG)
 <br>
+![PCBA_bottom](PCBA3_bottom3.PNG)
+<br>
+
 
 
 ## Parts List
