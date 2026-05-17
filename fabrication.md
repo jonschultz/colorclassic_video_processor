@@ -13,6 +13,9 @@
 <br>
 ![bottom_ortho](video_integrated_PCBA3_bottom_ortho.PNG)
 <br>
+![bare_board](bare_board2.PNG)
+<br>
+
 
 ## Parts List
 <br>
