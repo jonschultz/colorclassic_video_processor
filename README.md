@@ -28,3 +28,6 @@ Running with the colorclassic_video_processor, during boot.
 [Main Schematic and Sub-Circuits](sub_circuits.md)
 <br>
 [Fabrication Files and Notes](fabrication.md)
+<br>
+[Installation and Setup](setup.md)
+<br>
