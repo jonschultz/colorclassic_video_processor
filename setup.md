@@ -16,13 +16,13 @@
 ![rgb_pot](rgb_pot_adjust1.PNG)
 <br><br>
 * The warp (SKEW_POT) adjuster is a much smaller, and harder-to-access SMD component near the front side of the board. It's not readily adjustable with the analog board fully installed and the system powered. I would recommend depowering the machine, disconnecting the neck board from the CRT, disconnecting the speaker cable, and then sliding the analog board back by a few inches to gain better access. Small, iterative adjustments can be made to the pot, checking the image geometry each time after re-installation of the analog board. Typically, the pot will require some rotation counter clockwise from the middle wiper position to null the associated artifact. An image of the position that I'm currently using is shown below. In the middle position (effectively disabling the de-warping compensation), the left side of the image will be slightly bowed in at the vertical center, and right side will be oppositely bowed outward. In the optimal adjustement position, the two side should look as vertical as possible.<br><br>
-<br>
+<br><br>
 ![warp](warp1.PNG)
-<br>
+<br><br>
 Non-corrected image. Notice the concave warp on the left side of the image.<br><br>
 ![dewarp](dewarp1.PNG)
-<br>
+<br><br>
 With optimal adjustment of the SKEW_POT.<br><br>
 ![warp_adjust](warp_adjust2.PNG)
-<br>
+<br><br>
 A good rough position to start with on the SKEW_POT.<br><br>
