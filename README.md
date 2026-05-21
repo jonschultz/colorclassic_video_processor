@@ -31,3 +31,5 @@ Running with the colorclassic_video_processor, during boot.
 <br>
 [Installation and Setup](setup.md)
 <br>
+[Future Work](future.md)
+<br>
