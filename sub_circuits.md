@@ -1,9 +1,10 @@
-![video](video_schem_20260513A.png)
+![video](video_schem_20260524A.png)
 #
 Change Log:
 * 4/5/2026 - Update to schematic 20260405A. Incorporates capacitive coupling between vertical deflection accumulator and amplifier and associated output-referenced clamp. Coarse adjustment pot for vertical size removed and replaced with fixed resistors. V1 of horizontal section changed to fixed voltage with Schottky diode. Ramp buffer converted to NPN follower for improved thermal stability (always far from saturation region). In RGB section, introduced output-referenced active clamp with simplified brightness supply. VHF/UHF BJTs incorporated into amps. Created unity-gain buffer section with pulldown for sync-tip insertion. Minor value tuning to accomodate reversion to original CC flyback (157-0146) and associated change of B+ from 86V to 68V.<br><br>
 * 5/13/2026 - Update to schematic 20260513A. Change name of "Skew Compensation" to "Warp Compensation" and make it a standard section of the circuitry, now that it has been implemented in the latest revision. Incorporate SMMBFJ177LT1G JFETs into RGB preamps as part of dynamic gain for contrast adjustment. Add level shift circuit section for using the contrast adjustment voltage at Pin 19 to drive JFETs.<br><br>
 * 5/17/2026 - Updated some references to component values below. Clarified description of capabilities for RGB gain control.<br><br>
+* 5/24/2026 - Changed R54 value to 1k and changed D8 to Schottky. Both changes were required to achieve faster HSYNC edge detection at higher resolutions, with more support coming in the future.<br><br>
 <br><br>
 # General Notes
 * Unless specificed for another particular component, any reference to a "Pin" position is with respect to the XC1186B's original pinout, and as such, the pinout of colorclassic_video_processor.<br><br>
