@@ -74,10 +74,10 @@ In some cases, multiple package sizes could fit, so I've noted that in the "Pack
 | D10      | BZX4C3V3-E3-18        | 3.3V         | SOD-323              |  +/- 5%   | Zener                         |
 | R53      |                         | 10k          | 1206                 |  +/- 1%   | Thick film, 1/4W              |
 | Q24      | S8050                   | NPN          | SOT-23               |           |                               |
-| R54      |                         | 4.7k (1k for hi res)        | 1206                 |  +/- 1%   | Thick film, 1/4W              |
+| R54      |                         | 1k           | 1206                 |  +/- 1%   | Thick film, 1/4W              |
 | C9       | CL21C102JCFNNNE         | 1nF, 100V    | 0805                 |  +/- 5%   | C0G Dielectric                |
 | R52      |                         | 2k           | 1206                 |  +/- 1%   | Thick film, 1/4W              |
-| D8       | 1N4148W                 |              | SOD-123              |           |                               |
+| D8       | BAT54H                  |              | SOD-323              |           | Schottky                      |
 | R55      |                         | 10k          | 1206                 |  +/- 1%   | Thick film, 1/4W              |
 | R59      |                         | 4.7k         | 1206                 |  +/- 1%   | Thick film, 1/4W              |
 | R56      |                         | 2k           | 1206                 |  +/- 1%   | Thick film, 1/4W              |
