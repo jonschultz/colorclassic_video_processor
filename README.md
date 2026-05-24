@@ -15,8 +15,8 @@ colorclassic_video_processor is an ongoing reverse‑engineering project to recr
 * Additional on-board geometry adjustment for "warp", using input from the TDA8145 IC on the Color Classic analog board.<br>
 
 ## Coming Soon
-* Support for other common resolutions, including 512x384, with less adjustment required between resolution/mode changes.<br><br>
-* Possibly support for the "Green Gain" and "Blue Gain" analog board potentiometers.<br><br>
+* Support for other common resolutions, including 512x384, with less adjustment required between resolution/mode changes.<br>
+* Possibly support for the "Green Gain" and "Blue Gain" analog board potentiometers.<br>
 * See [Future Work](future.md)<br><br>
 
 #
