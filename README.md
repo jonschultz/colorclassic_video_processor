@@ -17,7 +17,7 @@ colorclassic_video_processor is an ongoing reverse‑engineering project to recr
 ## Coming Soon
 * Support for other common resolutions, including 512x384, with less adjustment required between resolution/mode changes.<br>
 * Possible support for the "Green Gain" and "Blue Gain" analog board potentiometers.<br>
-* See [Future Work](future.md)<br><br>
+* See [Future and Ongoing Work](future.md)<br><br>
 
 #
 ![PCB1](PCB_sideA.PNG)
@@ -47,5 +47,5 @@ Running with the colorclassic_video_processor, during boot.
 <br>
 [Installation and Setup](setup.md)
 <br>
-[Future Work](future.md)
+[Future and Ongoing Work](future.md)
 <br>
