@@ -6,4 +6,4 @@
 
 
 ## Current Development Status
-* As of 5/26/2026, I've been experimenting with design changes and rework of the published v3 design to changing the horizontal drive timing architecture. I have it basically working with timing referenced to the current scanline's HSYNC pulse, while also controlling the duty cycle more accurately. This makes the system much more tolerant of changes to the horizontal frequency, enabling 512x384, 640x480, and 800x600, with only some adjustment of the Horizontal Shift ("HS") potentiometer.
+* As of 5/26/2026, I've been experimenting with design changes and rework of the published v3 design to change the horizontal drive timing architecture. I have it basically working with timing referenced to the current scanline's HSYNC pulse, while also controlling the duty cycle more accurately. This makes the system much more tolerant of changes to the horizontal frequency, enabling 512x384, 640x480, and 800x600, with only some adjustment of the Horizontal Shift ("HS") potentiometer.
