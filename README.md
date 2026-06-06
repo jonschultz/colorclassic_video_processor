@@ -41,6 +41,8 @@ The custom PCBA installed in the sockets.
 Running with the colorclassic_video_processor, during boot.
 <br><br><br>
 #
+[Image Gallery](gallery.md)
+<br>
 [Main Schematic and Sub-Circuits](sub_circuits.md)
 <br>
 [Fabrication Files and Notes](fabrication.md)
