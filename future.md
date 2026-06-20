@@ -11,4 +11,4 @@
 * 6/20/2026 - Further improvements to the phase correction in the horizontal circuitry have been prototyped and are working well. It have improved capability to detect the horizontal frequency and scale certain signals accordingly, requiring even less adjustment when switching resolutions. I've also implemented similar scaling in the vertical circuitry, though there's still some work to be done there for v4.<br><br>
 ![rework](horiz_rework1.PNG)
 <br>
-v3 PCBA with rework and additional proto-board to experiment with v4 changes.
+v3 PCBA with rework and additional proto-board to experiment with v4 changes.<br><br>
