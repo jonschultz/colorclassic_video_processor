@@ -10,5 +10,4 @@
 * 6/6/2026 - I've prototyped changes to the horizontal circuitry on v3 to measure and regulate the phase of the horizontal drive pulse relative to the flyback pulse, providing PLL-like functionality. This goes beyond even the function mentioned above, removing many of the horizontal shift drift effect. It also makes the system even more agnostic to various resolutions and associated horizontal frequencies, and eliminates the need for a signal from the TDA8145 for "warp compensation". I'm working on more testing and optimization. I hope to have a v4 layout done in the next couple of weeks.<br><br>
 * 6/20/2026 - Further improvements to the phase correction in the horizontal circuitry have been prototyped and are working well. It have improved capability to detect the horizontal frequency and scale certain signals accordingly, requiring even less adjustment when switching resolutions. I've also implemented similar scaling in the vertical circuitry, though there's still some work to be done there for v4.<br><br>
 ![rework](horiz_rework1.PNG)
-<br>
 v3 PCBA with rework and additional proto-board to experiment with v4 changes.<br><br>
