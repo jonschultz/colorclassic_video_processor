@@ -12,5 +12,7 @@
 ![rework](horiz_rework1.PNG)<br>
 v3 PCBA with rework and additional proto-board to experiment with v4 changes.<br><br>
 * 6/27/2026 - v4 design is complete and I'm in the process of converting the project over to KiCad. The next design and output files that I post here will hopefully be output files from KiCad for easy PCBA fabrication.<br><br>
-* 7/3/2026 - Completed porting the v4 design to KiCad, and now in the process of getting PCBs made externally. After initial assembly and testing, I plan to update all the documentation and post output files for v4, including Gerbers for PCB fabrication.<br><br>
+* 7/3/2026 - Completed porting the v4 design to KiCad, and now in the process of getting PCBs made externally. After initial assembly and testing, I plan to update all the documentation and post output files for v4, including Gerbers for PCB fabrication. v4 features include:<br><br>
+*  test1<br><br>
+*  test2<br><br>
 ![kicad](kicad_conversion1.PNG)<br><br>
