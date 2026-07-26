@@ -47,5 +47,5 @@ R77,1,100k,Resistor_SMD:R_0805_2012Metric,,
 R80,1,7.5k,Resistor_SMD:R_1206_3216Metric,,
 R85,1,7.5k,Resistor_SMD:R_0805_2012Metric,,
 R104,1,47k,Resistor_SMD:R_1206_3216Metric,,
-TH1,1,10k,Resistor_SMD:R_0603_1608Metric,,
+TH1,1,10k,Resistor_SMD:R_0603_1608Metric,https://product.tdk.com/system/files/dam/doc/product/sensor/ntc/chip-ntc-thermistor/data_sheet/datasheet_ntcgs163jf103ft7.pdf,NTCGS163JF103FT7
 X1,1,LM1881,Package_DIP:DIP-8_W7.62mm,https://www.ti.com/lit/ds/symlink/lm1881.pdf,
