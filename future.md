@@ -2,7 +2,7 @@
 * In the spirit of providing more drop-in compatibility, if there is any outside interest in enabling the Blue Gain and Green Gain pots on the analog board (the only two that are currently non-functional with colorclassic_video_processor) I might work to implement it. I doubt that I would eliminate the gain pots that are on-board, since I personally think this is an upgrade due to the large dynamic range and 3-channel independent control. More likely, I would enable the Blue Gain and Green Gain pots to provide a little bit of fine control, in parallel with the full-range control of the onboard pots, similar to I've implemented Sub Contrast.<br><br>
 
 
-## Development Status History
+## Development History
 * 7/26/2026 - Version 4.0.1 design released publicly.<br><br>
 * 7/21/2026 - I've received the v4 PCBs from the fab, and I've got one assembled and running. Performance looks good and prety much identical to the reworked v3 prototype. However, I've already made some small changes to a few component values and some other minor changes in the horizontal section for further reduced temperature sensitivity. I plan to package up the KiCad files, BOM, and Gerbers + drill files for v4.0.1 and post them within the next few days. This will also mean that I'll need to clean up all the other sections of the repo to reflect the latest design. It's a lot of work, but it's coming.<br><br>
 ![PCB_v4_1](PCB_v4_1.PNG)<br><br>
