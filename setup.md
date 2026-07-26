@@ -13,5 +13,5 @@
 ## Startup
 * When running the system for the first few times, it's convenient to run without the top of the video cage re-installed. This way, the PCBA can be pulled in and out if necessary, and the trim pots can be adjusted. There might be a very slight but noticeable vertical artifact line in the image in this state (corresponding to the negative edge of the horizontal drive pulse), but this will disappear with the cage top applied. Once all adjustments are completed and board works satisfactorily, I recommend replacing the top of the cage (as well as the bottom cover on the underside of the analog board, if it has not already been replaced).<br><br>
 * As mentioned earlier, the RGB gain pots are located in a rear corner so that they're maximally accessible with the analog board fully installed, even with the system powered on. Adjustments can be made live to optimize the color balance to one's preference. Of course, always be careful when operating close to live CRT components.<br><br>
-![rgb_pot](rgb_pot_adjust1.PNG)
+![rgb_pot](rgb_pot_adjust2.PNG)
 <br><br>
