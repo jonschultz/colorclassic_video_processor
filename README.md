@@ -24,13 +24,13 @@ colorclassic_video_processor is an ongoing reverse‑engineering project to recr
 * See [Future and Ongoing Work](future.md)<br><br>
 
 #
-![PCB1](PCB_sideA.PNG)
+![PCB1](PCB_v4_sideA.PNG)
 <br>
-CNC-prototyped, hand-assembled PCBA. The outline of the PCB is quite unusual, in order maximize board area within the video "cage", while providing clearance to other nearby discrete components.
+Vendor-fabricated, hand-assembled PCBA. The outline of the PCB is quite unusual, in order maximize board area within the video "cage", while providing clearance to other nearby discrete components.
 <br><br><br>
-![PCB2](PCB_sideB.PNG)
+![PCB2](PCB_v4_sideB.PNG)
 <br>
-Bottom side of the PCBA, showing pins and additional circuitry.
+Bottom side of the PCBA, showing pins and additional circuitry. Some rework is visible, bringing the design version from v4 to v4.0.1.
 <br><br><br>
 ![socket1](video_socket1.PNG)
 <br>
