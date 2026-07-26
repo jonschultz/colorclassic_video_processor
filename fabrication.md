@@ -8,8 +8,8 @@
 As mentioned in another section, the part identifiers have evolved organically along with the circuit design. The ordering doesn't have much relationship to the circuit layout at this point.<br><br>
 Many of the components, such as resistors are commoditity SMD parts, so no part number is given, just specs. I would recommend using 1% fixed resistors whenever possible, as the cost is really quite negligible.<br><br>
 Some of the capacitors absolutely require C0G dielectric for temperature stability and voltage insensitivity. A part number is explicity called out for all the capacitors. Other similar parts should work, as long C0G dielectric is used where specified.<br><br>
-The BOM is too long to provide in a table on this page, so I've provided a CSV file here:
-[BOM](https://github.com/jonschultz/colorclassic_video_processor/blob/main/ccvp_v4.0.1.csv)
+The BOM is too long to provide in a table on this page, so I've provided a CSV file here:<br>
+[KiCad Design Files](https://github.com/jonschultz/colorclassic_video_processor/blob/main/ccvp_v4.0.1.zip)
 <br>
 
 <br><br>
