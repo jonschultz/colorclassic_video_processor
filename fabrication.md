@@ -1,6 +1,9 @@
 # Layout and Fabrication
 <br>
-
+![layout_front](layout_A_v4.0.1.png)
+<br>
+![layout_back](layout_B_v4.0.1.png)
+<br><br><br>
 
 
 ## Parts List
