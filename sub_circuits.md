@@ -13,7 +13,7 @@ Change Log:
 # General Notes
 * Unless specificed for another particular component, any reference to a "Pin" position is with respect to the XC1186B's original pinout, and as such, the pinout of colorclassic_video_processor.<br><br>
 * I've taken some effort to label components uniquely and clearly, but there's always the possibility for mistakes. The reference designator numbering is somewhat random, as automatic labeling was at play while the design evolved over time. Many components were deleted and new ones emerged, with numbers being recycled in a somewhat disorganized way.<br><br>
-* A parts BOM is provided in the fabrication section. Some specific part numbers are provided in the schematic above, but many aren't. Some common parts, like resistors, will only be given rough specs and package type rather than a specific manufacturer's part number.<br><br>
+* A parts BOM is provided in the [Fabrication Files and Notes](fabrication.md) section. Some specific part numbers are provided in the schematic above, but many aren't. Some common parts, like resistors, will only be given rough specs and package type rather than a specific manufacturer's part number.<br><br>
 * I've added a "Condsiderations" section for each circuit category below, mainly to help those interested in building on this design or making changes. These sections are intended to explain some of my design intent and some possibly important things about the CC's electronics in general. My understanding is certainly not 100% comprehensive, but I hope others find this information useful.<br><br>
 <br><br>
 
