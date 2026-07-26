@@ -7,3 +7,7 @@
 ![glypha](glypha1.PNG)
 <br>
 <br>
+![800x600](800x600.PNG)
+<br>
+800x600 resolution, using the VGA mod, in the 84V B+ configuration.
+<br>
