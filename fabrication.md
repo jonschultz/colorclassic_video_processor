@@ -10,7 +10,7 @@ Many of the components, such as resistors are commoditity SMD parts, so no part 
 Some of the capacitors absolutely require C0G dielectric for temperature stability and voltage insensitivity. A part number is explicity called out for all the capacitors. Other similar parts should work, as long C0G dielectric is used where specified.<br><br>
 The BOM is too long to provide in a table on this page, so I've provided a CSV file here:<br>
 
-[KiCad Design Files](https://github.com/jonschultz/colorclassic_video_processor/blob/main/ccvp_v4.0.1.zip)
+[BOM](https://github.com/jonschultz/colorclassic_video_processor/blob/main/ccvp_v4.0.1.csv)
 <br>
 
 <br><br>
