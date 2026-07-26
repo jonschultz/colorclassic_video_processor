@@ -1,7 +1,7 @@
 ![schem_4.0.1](ccvp_v4.0.1.png)
 #
 Change Log:
-* 7/26/2026 - Updated to the v4 design, including lots of improvements and a true EDA-based design using KiCad
+* 7/26/2026 - Updated to the v4 design (v4.0.1 design and output files provided as first release), including lots of improvements and a true EDA-based design using KiCad.<br><br>
 * 5/24/2026 - Changed R54 value to 1k and changed D8 to Schottky. Both changes were required to achieve faster HSYNC edge detection at higher resolutions, with more support coming in the future.<br><br>
 * 5/17/2026 - Updated some references to component values below. Clarified description of capabilities for RGB gain control.<br><br>
 * 5/13/2026 - Update to schematic 20260513A. Change name of "Skew Compensation" to "Warp Compensation" and make it a standard section of the circuitry, now that it has been implemented in the latest revision. Incorporate SMMBFJ177LT1G JFETs into RGB preamps as part of dynamic gain for contrast adjustment. Add level shift circuit section for using the contrast adjustment voltage at Pin 19 to drive JFETs.<br><br>
@@ -12,8 +12,8 @@ Change Log:
 <br><br>
 # General Notes
 * Unless specificed for another particular component, any reference to a "Pin" position is with respect to the XC1186B's original pinout, and as such, the pinout of colorclassic_video_processor.<br><br>
-* I've taken some effort to label components uniquely and clearly, but there's always the possibility for mistakes. The numbering is somewhat random, as automatic labeling was at play while the design evolved over time. Many components were deleted and new ones emerged, with numbers being recycled in a somewhat disorganized way.<br><br>
-* A parts list will be provided in a later section. Some specific part numbers are provided in the schematic above, but many aren't. Some common parts, like resistors, will only be given rough specs and package type rather than a specific manufacturer's part number.<br><br>
+* I've taken some effort to label components uniquely and clearly, but there's always the possibility for mistakes. The reference designator numbering is somewhat random, as automatic labeling was at play while the design evolved over time. Many components were deleted and new ones emerged, with numbers being recycled in a somewhat disorganized way.<br><br>
+* A parts BOM is provided in the fabrication section. Some specific part numbers are provided in the schematic above, but many aren't. Some common parts, like resistors, will only be given rough specs and package type rather than a specific manufacturer's part number.<br><br>
 * I've added a "Condsiderations" section for each circuit category below, mainly to help those interested in building on this design or making changes. These sections are intended to explain some of my design intent and some possibly important things about the CC's electronics in general. My understanding is certainly not 100% comprehensive, but I hope others find this information useful.<br><br>
 <br><br>
 
