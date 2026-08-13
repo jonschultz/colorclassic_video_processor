@@ -1,16 +1,16 @@
 # Layout and Fabrication
 <br>
 
-![layout_front](layout_A_v4.0.1.png)
+![layout_front](images/layout_A_v4.0.1.png)
 <br>
 
-![layout_back](layout_B_v4.0.1.png)
+![layout_back](images/layout_B_v4.0.1.png)
 <br>
 
-![layout_3D](layout_3D_v4.0.1.png)
+![layout_3D](images/layout_3D_v4.0.1.png)
 <br>
 
-![layout_3D_back](layout_3D_B_v4.0.1.png)
+![layout_3D_back](images/layout_3D_B_v4.0.1.png)
 <br><br><br>
 
 
@@ -21,7 +21,7 @@ Many of the components, such as resistors are commoditity SMD parts, so no part 
 Some of the capacitors absolutely require C0G dielectric for temperature stability and voltage insensitivity. A part number is explicity called out for all the capacitors. Other similar parts should work, as long C0G dielectric is used where specified.<br><br>
 The BOM is too long to provide in a table on this page, so I've provided a CSV file here:<br>
 
-[BOM](https://github.com/jonschultz/colorclassic_video_processor/blob/main/ccvp_v4.0.1.csv)
+[BOM](https://github.com/jonschultz/colorclassic_video_processor/blob/main/downloads/ccvp_v4.0.1.csv)
 <br>
 
 <br><br>
@@ -33,6 +33,6 @@ The BOM is too long to provide in a table on this page, so I've provided a CSV f
 * I've provided a zip file with the fabrication files (Gerbers and drill files) for v4.0.1, which can be directly uploaded to a PCB fab house like PCBWay. I've also provided a zipped archived set of KiCad design files. Everything here is provided under a Creative Commons license, allowing anyone to reuse/remix this work for non-commercial purposes.<br>
 <a href="https://github.com/jonschultz/colorclassic_video_processor/">colorclassic_video_processor</a> © 2026 by <a href="https://github.com/jonschultz/colorclassic_video_processor/">Jonathan Schultz</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
 
-[KiCad Design Files](https://github.com/jonschultz/colorclassic_video_processor/blob/main/ccvp_v4.0.1.zip)
+[KiCad Design Files](https://github.com/jonschultz/colorclassic_video_processor/blob/main/downloads/ccvp_v4.0.1.zip)
 <br>
-[Gerber Files](https://github.com/jonschultz/colorclassic_video_processor/blob/main/ccvp_v4.0.1_gerber.zip)
+[Gerber Files](https://github.com/jonschultz/colorclassic_video_processor/blob/main/downloads/ccvp_v4.0.1_gerber.zip)
