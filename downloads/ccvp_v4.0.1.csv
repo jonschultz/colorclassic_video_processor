@@ -1,11 +1,11 @@
 Reference,Qty,Value,Footprint,Datasheet,MPN
 "BG_POT1,GG_POT1,RG_POT1",3,2k,Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical,https://www.bourns.com/docs/product-datasheets/3296.pdf,
-"C1,C8",2,100µ,Capacitor_THT:CP_Radial_D6.3mm_P2.50mm,https://www.mouser.com/catalog/specsheets/Kemet_09242021_ES5107M016AE1EA.pdf,ES5107M016AE1EA
-"C2,C6",2,0.1µ,Capacitor_SMD:C_0805_2012Metric,https://datasheets.kyocera-avx.com/cx5r.pdf,0805YD104KAT2A
-"C3,C12,C16",3,10µ,Capacitor_SMD:C_0805_2012Metric,https://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL21B106KOQNNN,CL21B106KOQNNNG
-C4,1,0.47µ,Capacitor_SMD:C_1206_3216Metric,https://www.mouser.com/datasheet/3/76/2/GRM31C5C1E474JE01_01A.pdf,GRM31C5C1E474JE01L
-"C5,C10",2,1µ,Capacitor_SMD:C_0603_1608Metric,https://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10A105KA8NNN,CL10A105KA8NNNL
-"C7,C14,C15",3,0.047µ,Capacitor_SMD:C_0805_2012Metric,https://www.mouser.com/datasheet/3/508/1/KEM_C1091_C0G_ESD.pdf,C0805C473K3GECAUTO7210
+"C1,C8",2,100Âµ,Capacitor_THT:CP_Radial_D6.3mm_P2.50mm,https://www.mouser.com/catalog/specsheets/Kemet_09242021_ES5107M016AE1EA.pdf,ES5107M016AE1EA
+"C2,C6",2,0.1Âµ,Capacitor_SMD:C_0805_2012Metric,https://datasheets.kyocera-avx.com/cx5r.pdf,0805YD104KAT2A
+"C3,C12,C16",3,10Âµ,Capacitor_SMD:C_0805_2012Metric,https://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL21B106KOQNNN,CL21B106KOQNNNG
+C4,1,0.47Âµ,Capacitor_SMD:C_1206_3216Metric,https://www.mouser.com/datasheet/3/76/2/GRM31C5C1E474JE01_01A.pdf,GRM31C5C1E474JE01L
+"C5,C10",2,1Âµ,Capacitor_SMD:C_0603_1608Metric,https://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10A105KA8NNN,CL10A105KA8NNNL
+"C7,C14,C15",3,0.047Âµ,Capacitor_SMD:C_0805_2012Metric,https://www.mouser.com/datasheet/3/508/1/KEM_C1091_C0G_ESD.pdf,C0805C473K3GECAUTO7210
 "C9,C11,C13",3,1n,Capacitor_SMD:C_0805_2012Metric,https://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL21C102JCFNNN,CL21C102JCFNNNE
 "D1,D5,D7,D10,D11",5,BZX384xxxx,Diode_SMD:D_SOD-323,https://www.vishay.com/docs/85764/bzx384.pdf,
 "D2,D4,D6,D8",4,BAT54H,Diode_SMD:D_SOD-323,https://www.onsemi.com/pdf/datasheet/bat54ht1-d.pdf,
