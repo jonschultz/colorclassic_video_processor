@@ -3,6 +3,9 @@
 
 
 ## Development History
+* 8/12/2026 - Proof of concept for VGA output capability demonstrated with design mods and rework on a 4.0 PCB.<br><br>
+![mirror1](images/mirror1.PNG)<br><br>
+![mirror2](images/mirror2.PNG)<br><br>
 * 7/26/2026 - Version 4.0.1 design released publicly.<br><br>
 * 7/21/2026 - I've received the v4 PCBs from the fab, and I've got one assembled and running. Performance looks good and prety much identical to the reworked v3 prototype. However, I've already made some small changes to a few component values and some other minor changes in the horizontal section for further reduced temperature sensitivity. I plan to package up the KiCad files, BOM, and Gerbers + drill files for v4.0.1 and post them within the next few days. This will also mean that I'll need to clean up all the other sections of the repo to reflect the latest design. It's a lot of work, but it's coming.<br><br>
 ![PCB_v4_1](images/PCB_v4_1.PNG)<br><br>
