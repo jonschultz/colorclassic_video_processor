@@ -41,7 +41,7 @@ The video "cage" on the analog board, showing the original XC1186B removed and 2
 <br>
 The v4 PCBA installed in the sockets.
 <br><br><br>
-![boot](images/boot1.PNG)
+![boot](images/boot2.PNG)
 <br>
 Running with the colorclassic_video_processor, during boot.
 <br><br><br>
