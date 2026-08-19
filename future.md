@@ -4,7 +4,7 @@
 
 ## Development History
 * 8/18/2026 - Working on layout of v4.2.0 with on-board connector for VGA output.<br><br>
-![vga_conn1](image/4.2.0_vga_conn1.PNG)<br><br>
+![vga_conn1](images/4.2.0_vga_conn1.PNG)<br><br>
 * 8/12/2026 - Proof of concept for VGA output capability demonstrated with design mods and rework on a 4.0 PCB.<br><br>
 ![mirror1](images/mirror1.PNG)<br><br>
 ![mirror2](images/mirror2.PNG)<br><br>
