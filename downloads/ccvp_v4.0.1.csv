@@ -7,7 +7,7 @@ C4,1,0.47µ,Capacitor_SMD:C_1206_3216Metric,https://www.mouser.com/datasheet/3/7
 "C5,C10",2,1µ,Capacitor_SMD:C_0603_1608Metric,https://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL10A105KA8NNN,CL10A105KA8NNNL
 "C7,C14,C15",3,0.047µ,Capacitor_SMD:C_0805_2012Metric,https://www.mouser.com/datasheet/3/508/1/KEM_C1091_C0G_ESD.pdf,C0805C473K3GECAUTO7210
 "C9,C11,C13",3,1n,Capacitor_SMD:C_0805_2012Metric,https://weblib.samsungsem.com/mlcc/mlcc-ec-data-sheet.do?partNumber=CL21C102JCFNNN,CL21C102JCFNNNE
-"D1,D5,D7,D10,D11",5,BZX384xxxx,Diode_SMD:D_SOD-323,https://www.vishay.com/docs/85764/bzx384.pdf,
+"D1,D5,D7,D10,D11",5,BZX384C3V3,Diode_SMD:D_SOD-323,https://www.vishay.com/docs/85764/bzx384.pdf,
 "D2,D4,D6,D8",4,BAT54H,Diode_SMD:D_SOD-323,https://www.onsemi.com/pdf/datasheet/bat54ht1-d.pdf,
 "D3,D9,D12,D13,D14,D15",6,1N4148WS,Diode_SMD:D_SOD-323,https://www.vishay.com/docs/85751/1n4148ws.pdf,
 FUSE1,1,C1F 250,Fuse:Fuse_1206_3216Metric,https://www.belfuse.com/media/datasheets/products/circuit-protection/ds-cp-c1f-series.pdf,C1F 250
