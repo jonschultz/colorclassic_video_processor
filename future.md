@@ -3,6 +3,7 @@
 
 
 ## Development History
+* 10/21/2026 - Ordered PCB fab for v4.2.1. New version includes a minor routing fix and a more appropriate connector the the VGA output. If the board tests well once received and assembled, I'll create a new downloadable release for this version.<br><br>
 * 9/10/2026 - Received PCBs from vendor for v4.2.0 for testing. Design works with very minor rework to fix a routing error. New VGA output capability functions as expected. I'm currently implementing some cleanup as v4.2.1. I might release this one soon as a downloadable package.<br><br>
 ![4.2.1](images/4.2.1_A.PNG)<br><br>
 * 8/18/2026 - Working on layout of v4.2.0 with on-board connector for VGA output.<br><br>
