@@ -38,7 +38,7 @@ The video "cage" on the analog board, showing the original XC1186B removed and 2
 <br><br><br>
 ![socket1](images/PCB_v4.2.2_1.PNG)
 <br>
-The v4 PCBA installed in the sockets.
+The v4.2.1 PCBA installed in the sockets.
 <br><br><br>
 ![boot](images/boot2.PNG)
 <br>
