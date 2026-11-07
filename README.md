@@ -24,19 +24,19 @@ colorclassic_video_processor is an ongoing reverse‑engineering project to recr
 * See [Future and Ongoing Work](future.md)<br><br>
 
 #
-![PCB1](images/PCB_v4_sideA.PNG)
+![PCB1](images/PCB_v4.2.2_2.PNG)
 <br>
-Vendor-fabricated, hand-assembled PCBA. The outline of the PCB is quite unusual, in order maximize board area within the video "cage", while providing clearance to other nearby discrete components.
+Vendor-fabricated, hand-assembled PCBA (v4.2.1 PCB, identical layout to 4.2.2). The outline of the PCB is quite unusual, in order maximize board area within the video "cage", while providing clearance to other nearby discrete components.
 <br><br><br>
-![PCB2](images/PCB_v4_sideB.PNG)
+![PCB2](images/PCB_v4.2.2_3.PNG)
 <br>
-Bottom side of the PCBA, showing pins and additional circuitry. Some rework is visible, bringing the design version from v4 to v4.0.1.
+Bottom side of the PCBA, showing pins and additional circuitry.
 <br><br><br>
 ![socket1](images/video_socket1.PNG)
 <br>
 The video "cage" on the analog board, showing the original XC1186B removed and 2x 21 pin sockets (Preci-dip 317-87-121-41-005101) installed for quick installation and removal of the custom PCBA.
 <br><br><br>
-![socket1](images/PCB_v4_2.PNG)
+![socket1](images/PCB_v4.2.2_1.PNG)
 <br>
 The v4 PCBA installed in the sockets.
 <br><br><br>
