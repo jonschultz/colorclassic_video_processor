@@ -3,6 +3,7 @@
 
 
 ## Development History
+* 11/7/2026 - Released v4.2.2 for download. This is functionally identical to 4.2.1 (identical layout), but with some differences in part specs.<br><br>
 * 11/1/2026 - Received PCBs for v4.2.1, completed assembly and started testing. Works as expected, however I discovered that some of the BJTs that I've spec'ed in the design files are not exact matches for the parts that I've been using in development. This leads to some small timing differences that affect horizontal centering, especially at frequencies other than 31.5kHz. I'm in the process of re-spec'ing these parts and will soon release v4.2.0.<br><br>
 * 10/21/2026 - Ordered PCB fab for v4.2.1. New version includes a minor routing fix and a more appropriate connector the the VGA output. If the board tests well once received and assembled, I'll create a new downloadable release for this version.<br><br>
 * 9/10/2026 - Received PCBs from vendor for v4.2.0 for testing. Design works with very minor rework to fix a routing error. New VGA output capability functions as expected. I'm currently implementing some cleanup as v4.2.1. I might release this one soon as a downloadable package.<br><br>
